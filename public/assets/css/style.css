@@ -30,16 +30,44 @@ body {
     padding: 0 2rem;
 }
 
+/* Página travels.php */
+
 header {
+    padding-top: 1.5rem;
+}
+
+header .logo {
+    display: flex;
+    justify-content: center;
+}
+
+header .menu {
+    padding-top: 2rem;
+}
+
+header .menu ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+header .menu ul li a.link {
+    list-style: none;
+    color: #f5f5f5;
+}
+
+/* Página de login.php */
+
+#header {
     padding: 3rem 0;
 }
 
-header #logo {
+#header #logo {
     display: flex;
     align-items: center;
 }
 
-header #logo p {
+#header #logo p {
     font-size: 1.4rem;
     font-family: 'Poppins';
     font-style: normal;
@@ -162,13 +190,16 @@ input[type="password"]:focus-within {
     margin-top: 1.4rem;
 }
 
+/* Fim da página de login */
+
 /* https://pt.stackoverflow.com/questions/5003/usar-s%C3%ADmbolo-numa-input-text-e-desaparecer-quando-se-escreve */
 /* concerta icone na input */
 
-/* Reponsividade */
+/* Responsividade */
 
 @media screen and (min-width: 1200px) {
     
+    /* Página login e register */
 
     html {
         overflow: hidden;
@@ -180,7 +211,7 @@ input[type="password"]:focus-within {
         width: 100vw;
     }
 
-    header {
+    #header {
         display: flex;
         justify-content: flex-start;
         padding: 4rem 4rem;
@@ -195,21 +226,20 @@ input[type="password"]:focus-within {
         background: #20201c;
         display: flex;
         flex-direction: column;
-        justify-content: center;
     }
 
     .formulario {
         background-color: #22241f;
         width: 57.2rem;
-        margin: 4.3rem 5.4rem;
-        padding: 5.5rem 11.9rem;
+        margin: 2.3rem 5.4rem;
+        padding: 4.5rem 11.9rem;
         border-radius: 0.4rem;
     }
 
     section.image {
-        background-image: url(../img/side-image.svg);
+        background-image: url(../img/travels-register.jpg);
         background-size: cover;
-        background-repeat: no-repeat;
+        background-position: center;
         width: 100%;
     }
 
