@@ -8,7 +8,8 @@
     ],
     "minimum-stability": "stable",
     "require": {
-        "symfony/var-dumper": "^6.0"
+        "symfony/var-dumper": "^6.0",
+        "vlucas/phpdotenv": "^5.5"
     },
     "autoload": {
         "psr-4": {

@@ -5,7 +5,7 @@
             <p> Diary </p>
         </div>
     </header>
-    <div class="formulario">
+    <div class="form">
         <div id="title">
             <img src="assets/img/log-in.svg" alt="">
             <h1> Make your registration </h1>

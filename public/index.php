@@ -10,6 +10,12 @@ use app\core\AppExtract;
 use app\core\MyApp;
 
 try {
+
+    
+
+    $dotenv = Dotenv\Dotenv::createImmutable(dirname(__FILE__, 2));
+    $dotenv->load();
+
     $myApp = new MyApp(new AppExtract); 
     $myApp->controller();
     $myApp->view();

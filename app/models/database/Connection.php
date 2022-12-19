@@ -10,7 +10,8 @@ class Connection {
     public static function connection() {
 
         try {
-            return new PDO("mysql:host=localhost; dbname=camp_io", "root", "erisvaldo123", [
+            return new PDO("mysql:host={$_ENV['DATABASE_HOST']}; dbname={$_ENV['DATABASE_NAME']}", 
+            "{$_ENV['DATABASE_USER']}", "{$_ENV['DATABASE_PASSWORD']}", [
                 PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"
             ]);
         }
